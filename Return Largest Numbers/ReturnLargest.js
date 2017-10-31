@@ -1,8 +1,6 @@
-/**
- * Created by liuyiqi on 2017/10/31.
- */
+
 function largestOfFour(arr) {
-    /*
+    
     //my
     var newarr=[];
     arr.map(function(item){
@@ -13,7 +11,7 @@ function largestOfFour(arr) {
         newarr.push(m);
     });
     return newarr;
-    */
+    
 
     //better
     return arr.map(function(item){
@@ -27,5 +25,3 @@ function largestOfFour(arr) {
         return arr.map(Function.apply.bind(Math.max, null));
     }
 }
-
-console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
