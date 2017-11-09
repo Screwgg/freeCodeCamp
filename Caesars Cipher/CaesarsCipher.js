@@ -1,6 +1,6 @@
 function rot13(str) {
     //my
-    return str.split("").map(function(item){
+    return str.split('').map(function(item){
         if(item>='A'&&item<='M'){
             return String.fromCharCode(item.charCodeAt()+13);
         }
@@ -10,7 +10,7 @@ function rot13(str) {
         else{
             return item;
         }
-    }).join("");
+    }).join('');
 
     //better
     return str.replace(/[A-Z]/g,function(item){
@@ -19,4 +19,3 @@ function rot13(str) {
     });
 }
 
-console.log(rot13("SERR PBQR PNZC"));
